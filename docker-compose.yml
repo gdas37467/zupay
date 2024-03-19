@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  zupay:
+    image: gdas37467/zupay:latest
+    container_name : zupay  
+    ports:
+      - "80:80"  
+    env_file:
+      - .env
